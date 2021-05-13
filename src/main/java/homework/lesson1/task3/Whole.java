@@ -7,10 +7,7 @@ public class Whole {
         System.out.println(whole.getWhole(14));
         System.out.println(whole.getWhole(19));
     }
-
-
-
-    boolean getWhole(int a){
+    boolean getWhole(int a) {
         int b = a % 2;
         return b == 1;
     }

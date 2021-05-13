@@ -10,7 +10,6 @@ public class Scheme {
         System.out.println(scheme.getScheme(false, true, false, true));
         System.out.println(scheme.getScheme(true,false,true,false));
         System.out.println(scheme.getScheme(true,true,false,false));
-
     }
 
     boolean getScheme(boolean a, boolean b, boolean c, boolean d){

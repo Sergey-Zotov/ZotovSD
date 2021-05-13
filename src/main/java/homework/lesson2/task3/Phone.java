@@ -19,7 +19,6 @@ public class Phone {
         System.out.println(phone.cycles("+7(9fg)125-42-99"));
         System.out.println(phone.cycles("+7(122)2342343"));
 
-
     }
 
     boolean matches(String phone){

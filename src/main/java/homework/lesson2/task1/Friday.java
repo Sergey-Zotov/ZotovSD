@@ -10,7 +10,6 @@ public class Friday {
         test.fridayForeach(friday);
         test.fridayWhile(friday);
 
-
     }
     void fridayFor(String[] array){
         for (int i = 0; i < array.length; i++){

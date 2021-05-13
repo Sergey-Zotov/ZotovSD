@@ -11,8 +11,6 @@ public class Logic {
         System.out.println(logic.getLogicOr(true,true) + " " + logic.getLogicAnd(true, true));
     }
 
-
-
     boolean getLogicOr(boolean a, boolean b){
         return !(a || b);
     }
