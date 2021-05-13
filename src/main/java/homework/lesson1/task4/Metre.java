@@ -8,7 +8,8 @@ public class Metre {
         System.out.println(metre.getMetre(800));
         System.out.println(metre.getMetre(278));
     }
-    int getMetre(int sm){
+
+    int getMetre(int sm) {
         int m = sm / 100;
         return m;
     }

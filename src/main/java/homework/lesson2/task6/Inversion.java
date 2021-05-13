@@ -26,20 +26,20 @@ public class Inversion {
 
         for (int i = 0; i < a; i++) {
             for (int j = 0; j < b; j++) {
-                if (original[i][j] == 2){
+                if (original[i][j] == 2) {
                     two = 2;
                     reconstruction[i][j] = 2;
                     continue;
-                }else {
+                } else {
                     reconstruction[i][j] = (two == 2 ? (original[i][j] + 1) % 2 : original[i][j]);
                 }
             }
         }
         System.out.println("Оригинал");
 
-        for (int[] line: original){
+        for (int[] line : original) {
             System.out.println();
-            for (int element : line){
+            for (int element : line) {
                 System.out.print(element + " ");
             }
         }
@@ -47,9 +47,9 @@ public class Inversion {
         System.out.println();
         System.out.println("Реконструкция");
 
-        for (int[] line: reconstruction){
+        for (int[] line : reconstruction) {
             System.out.println();
-            for (int element : line){
+            for (int element : line) {
                 System.out.print(element + " ");
             }
         }

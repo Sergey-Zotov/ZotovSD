@@ -11,7 +11,6 @@ public class SwitchNoBreaks {
     }
 
     static void switchNoBreaks(int a) {
-
         switch (a) {
             default:
                 System.out.print("A");

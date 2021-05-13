@@ -2,7 +2,8 @@ package homework.lesson2.task5;
 
 import java.util.Random;
 
-public class Twodimensional {
+public class ChangingAnArray {
+    
     public static void main(String[] args) {
         Random random = new Random();
         final int a = random.nextInt(3) + 3;
@@ -18,7 +19,6 @@ public class Twodimensional {
         }
 
         System.out.println();
-
         int[][] twin = new int[b][a];
         for (int i = 0; i < b; i++) {
             for (int j = 0; j < a; j++) {

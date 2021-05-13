@@ -28,6 +28,5 @@ public class SwitchBreaks {
             default:
                 System.out.println("AAAAA");
         }
-
     }
 }
