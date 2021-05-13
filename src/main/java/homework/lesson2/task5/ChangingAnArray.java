@@ -2,7 +2,7 @@ package homework.lesson2.task5;
 
 import java.util.Random;
 
-public class ChangingAnArray {
+public class ChangingAnArray{
     
     public static void main(String[] args) {
         Random random = new Random();
