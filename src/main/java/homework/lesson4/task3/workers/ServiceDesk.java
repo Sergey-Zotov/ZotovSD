@@ -9,13 +9,16 @@ public class ServiceDesk {
         if (description.matches("^.*((справк)|(отчет)|(бюджет)).*$")) {
             Accountant.takeTicket(countTicket);
             return;
-        } else if (description.matches("^.*((доставк)|(курьер)).*$")) {
+        }
+        if (description.matches("^.*((доставк)|(курьер)).*$")) {
             Logistician.takeTicket(countTicket);
             return;
-        } else if (description.matches("^.*((компьютер)|(сервер)|(принтер)).*$")) {
+        }
+        if (description.matches("^.*((компьютер)|(сервер)|(принтер)).*$")) {
             SysAdmin.takeTicket(countTicket);
             return;
-        } else if (description.matches("^.*(уборк).*$")) {
+        }
+        if (description.matches("^.*(уборк).*$")) {
             Cleaner.takeTicket(countTicket);
             return;
         } else

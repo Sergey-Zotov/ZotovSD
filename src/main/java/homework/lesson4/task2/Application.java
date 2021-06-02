@@ -11,11 +11,10 @@ public class Application {
     public static void main(String[] args) throws IOException {
         Human[] humans = new Human[3];
         int index = 0;
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        String input = bufferedReader.readLine();
 
         while (true) {
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-            String input = bufferedReader.readLine();
-
             Boolean validInput = Validator.checkingForTwoSpaces(input);
             if (!validInput) continue;
 

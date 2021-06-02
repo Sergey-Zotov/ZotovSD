@@ -15,7 +15,7 @@ public class Application {
             try {
                 System.out.printf("Имя: %s, Возраст: %d%n", cats[i].getName(), cats[i].getAge());
             } catch (NullPointerException exception) {
-                System.out.println("Ошибка: ссылка на null, компиляция прекращена.");
+                System.out.println("Ошибка: ссылка на null, процес остановлен.");
                 break;
             }
         }
