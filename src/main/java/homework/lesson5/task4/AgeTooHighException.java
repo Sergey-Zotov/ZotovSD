@@ -1,5 +1,5 @@
 package homework.lesson5.task4;
 
-public class AgeTooHighException {
+public class AgeTooHighException extends Exception {
 
 }

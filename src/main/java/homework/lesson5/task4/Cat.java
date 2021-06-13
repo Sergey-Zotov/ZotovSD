@@ -6,27 +6,31 @@ public class Cat {
     private String name;
     private int age;
 
-    public Cat(String name, int age) {
-        this.name = name;
-        this.age = age;
+    public Cat(String name, int age) throws AgeTooHighException {
+        try {
+            if (age < 0) {
+                throw new AgeUnderZeroException();
+            }
+            if (age > 25) {
+                throw new AgeTooHighException();
+            }
+            this.name = name;
+            this.age = age;
+        } catch (AgeUnderZeroException exception) {
+            StackTraceElement element = exception.getStackTrace()[0];
+            System.out.println(element);
+        }
     }
 
     public String getName() {
+        if (name == null) {
+            throw new NullPointerException();
+        }
         return name;
     }
 
     public int getAge() {
         return age;
-    }
-
-    public Cat setAge(int age) {
-        this.age = age;
-        return this;
-    }
-
-    public Cat setName(String name) {
-        this.name = name;
-        return this;
     }
 
     public static String getRandomCatName() {
