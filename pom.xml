@@ -11,9 +11,26 @@
         <junit.version>5.7.2</junit.version>
         <apache.poi.poi>5.0.0</apache.poi.poi>
         <apache.poi-ooxml>5.0.0</apache.poi-ooxml>
+        <google.code.gson>2.8.8</google.code.gson>
+        <fasterxml.jackson.dataformat>2.12.5</fasterxml.jackson.dataformat>
     </properties>
 
     <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+            <version>${fasterxml.jackson.dataformat}</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${google.code.gson}</version>
+        </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
         <dependency>
@@ -35,8 +52,7 @@
             <artifactId>junit-jupiter-api</artifactId>
             <version>${junit.version}</version>
         </dependency>
-
-
+        
     </dependencies>
     <build>
         <plugins>
