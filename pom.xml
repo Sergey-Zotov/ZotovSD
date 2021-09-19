@@ -13,9 +13,17 @@
         <apache.poi-ooxml>5.0.0</apache.poi-ooxml>
         <google.code.gson>2.8.8</google.code.gson>
         <fasterxml.jackson.dataformat>2.12.5</fasterxml.jackson.dataformat>
+        <reflections>0.9.12</reflections>
     </properties>
 
     <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/org.reflections/reflections -->
+        <dependency>
+            <groupId>org.reflections</groupId>
+            <artifactId>reflections</artifactId>
+            <version>${reflections}</version>
+        </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml -->
         <dependency>
